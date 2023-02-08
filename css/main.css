@@ -1,0 +1,99 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos genericos*/
+
+body {
+    background-color: rgb(214, 240, 240);
+}
+
+/*estilo de home*/
+
+header {
+    background-color: rgb(189, 189, 236);
+    text-align: center;
+    padding: 10px;
+}
+
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 15px;
+}
+
+header img {
+    width: 30%;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* estilos de main home*/
+
+main {
+    text-align: center;
+    padding: 15px;
+}
+
+main h1 {
+    margin-bottom: 20px;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+main div div {
+    display: inline-block;
+}
+
+/* estilos de main class*/
+
+.titulo {
+    color: blue;
+}
+
+.imagenesproducto {
+    display: inline-block;
+    padding: 10px;
+}
+
+.imagenwap {
+    width: 5%;
+}
+
+.impact {
+    font-family: sans-serif;
+}
+
+.italica {
+    font-style: italic;
+}
+
+.comicsans {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* estilos de footer*/
+
+footer {
+    background-color: rgb(190, 190, 243);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.tamañoimagenfooter {
+    width: 5%;
+}
