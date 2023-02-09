@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- link bootstrap de css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    
     <!-- link de mi css -->
 
     <link rel="stylesheet" href="../css/main.css">
@@ -16,37 +21,35 @@
 
     <!-- banner principal -->
     <header>
-        <img src="../img/Titulo Saphirus.png" alt="Logo de empresa">
-
+        <h1> Tienda Online</h1>
         <nav>
             <ul>
                 <li>
 
-                    <a href="../index.html">Home</a>
+                    <a href="index.html">Home</a>
 
                 </li>
                 <li>
 
-                    <a href="contacto.html">contacto</a>
+                    <a href="pages/contacto.html">contacto</a>
 
                 </li>
                 <li>
 
-                    <a href="producto.html">producto</a>
+                    <a href="pages/producto.html">producto</a>
 
                 </li>
                 <li>
 
-                    <a href="quienessomos.html">quienes somos</a>
+                    <a href="pages/quienessomos.html">quienes somos</a>
 
                 </li>
                 <li>
 
-                    <a href="quieroserrevendedora.html">quiero ser revendedora</a>
+                    <a href="pages/quieroserrevendedora.html">quiero ser revendedora</a>
 
                 </li>
             </ul>
-
         </nav>
 
     </header>
@@ -54,48 +57,38 @@
     <!-- contenido pricipal -->
     <main>
 
-        <h1 class="titulo">Contacto</h1>
         <form>
-            <fieldset>
-                <legend>
-                    Completa tus datos
-                </legend>
-                <div>
-                    <label for="nombre_apellido"> Completa tu nombre </label>
-                    <input type="texto" name="nombre_apellido" placeholder="nombre y apellido">
-                </div>
-                <div>
-                    <label for="Email_usuario"> Completa tu email </label>
-                    <input type="email"="Email_usuario" placeholder="patosaphirus@gmail.com">
-                </div>
-                <div>
-                    <label for="Telefono"> Completa tu telefono </label>
-                    <input type="Telefono" name="Telefono" placeholder="11-12345678">
-                </div>
-
-                <div>
-
-                    <input type="submit">
-                    <input type="reset">
-
-                </div>
-
-
-            </fieldset>
-        </form>
+            <div class="mb-3">
+                <label for="Nombre y Apellido" class="form-label">Nombre y Apellido</label>
+                <input type="texto" class="form-control" id="exampleInputPassword1">
+              </div>
+            <div class="mb-3">
+              <label for="Email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="Telefono de Contacto" class="form-label">Telefono de Contacto</label>
+              <input type="Numero" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="Enviar" class="btn btn-primary">Enviar</button>
+            <button type="Limpiar" class="btn btn-primary">Limpiar</button>
+          </form>
 
     </main>
 
-    <!-- Pie de pagina -->
-
+    <!-- pie de pagina -->
     <footer>
-
         <h2> Todos los derechos reservados </h2>
 
         <h3> Seguinos en nuestras redes </h3>
-        <a href="https://www.instagram.com" target="_blank">
-            <img class="tamañoimagenfooter" src="../img/Instagram.png" alt="logo instagram"></a>
+        <a href="https://www.instagram.com" target="_blank"><img class="tamañoimagenfooter"
+                src="../Pato Saphirus/img/Instagram.png" alt="logo instagram"></a>
+
     </footer>
+
+    <!-- link bootstrap de js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 
