@@ -1,5 +1,3 @@
-
-
 /* reset */
 
 * {
@@ -16,7 +14,7 @@ body {
 
 /*estilo de home*/
 
-header{
+header {
     color: whitesmoke;
     display: flex;
     justify-content: space-around;
@@ -24,7 +22,7 @@ header{
     background-color: black;
 }
 
-header nav ul li a{
+header nav ul li a {
     list-style: none;
     display: flex;
     gap: 1.3rem;
@@ -34,14 +32,15 @@ header nav ul li a{
 
 /* estilos de main home*/
 
-main div img{
+main div img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 
 
 }
-main{
+
+main {
     height: 70vh;
     margin: 3rem;
     display: grid;
@@ -54,6 +53,7 @@ main{
 .imagen-home {
     grid-row: span 1;
 }
+
 .imagen-aromas {
     grid-row: span 1;
 }
@@ -62,51 +62,71 @@ main{
     display: none;
 }
 
+main .imagen-inicio {
+    display: none;
+}
+
 /* mq de tablet*/
 
 @media screen and (min-width:600px) {
-    body { background-color: rgb(187, 110, 110);
-    }
-main .imagen-titulo {
-        display: block;
+    body {
+        background-color: rgb(187, 110, 110);
     }
 
-
-main{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 40% 60%;
-    }
-
-.imagen-home, .imagen-aromas {
-        grid-row: span 1;
-    }
-
-.imagen-titulo {
-    grid-column: span 2;
-    grid-row: span 1;
-  }   
-
-}
-     
-/* mq de desktop */  
-
-@media screen and (min-width: 1024px){
-    body { background-color: rgb(221, 118, 22);
-    }
     main .imagen-titulo {
         display: block;
     }
 
-    main{
+
+    main {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 40% 60%;
     }
 
-.imagen-home, .imagen-aromas {
+    .imagen-home,
+    .imagen-aromas {
         grid-row: span 1;
     }
-    
+
+    .imagen-titulo {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
 }
+
+/* mq de desktop */
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: rgb(221, 118, 22);
+    }
+
+    main .imagen-titulo {
+        display: none;
+    }
+
+    main .imagen-home {
+        display: none;
+    }
+
+    main .imagen-inicio {
+        display: none;
+    }
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 70% ;
+    }
+
+    .imagen-aromas:hover {
+        transform: scale(0.8);
+        opacity: 70%;
+        transition: 3s;
+
+    }
+}
+
 
 
 
@@ -114,8 +134,9 @@ main{
 /* estilos de main class*/
 
 .titulo {
-   color: blue;
+    color: blue;
 }
+
 .imagenesproducto {
     display: inline-block;
     padding: 10px;
